@@ -83,7 +83,7 @@ def main(argv):
                               100 * probability, expec))
     
     writer = tf.summary.FileWriter("Hello-World")
-    writer.add_graph(see.graph)
+    writer.add_graph(sess.graph)
 
 
 if __name__ == '__main__':
