@@ -81,6 +81,9 @@ def main(argv):
 
         print(template.format(iris_data.SPECIES[class_id],
                               100 * probability, expec))
+    
+    writer = tf.summary.FileWriter("Hello-World")
+    writer.add_graph(see.graph)
 
 
 if __name__ == '__main__':
