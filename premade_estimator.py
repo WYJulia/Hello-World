@@ -82,6 +82,7 @@ def main(argv):
         print(template.format(iris_data.SPECIES[class_id],
                               100 * probability, expec))
     
+    sess = tf.Session()
     writer = tf.summary.FileWriter("Hello-World")
     writer.add_graph(sess.graph)
 
